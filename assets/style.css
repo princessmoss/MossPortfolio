@@ -73,6 +73,17 @@ padding: 10px;
   position: relative;
   display: inline-block; /* Make the width of box same as image */
 }
+
+.column-one:hover {
+  opacity: 0.3;
+  filter: alpha(opacity=30)
+}
+
+.column:hover {
+  opacity: 0.3;
+  filter: alpha(opacity=30)
+}
+
 .column .text {
   position: absolute;
   z-index: 999;
@@ -139,12 +150,25 @@ h2 {
   font-size: 250%;
 }
 
+#work .header {
+
+  display: left;
+}
 
 nav {
   display: flex;
   flex-direction: row-reverse;
   padding: 10px;
 
+}
+#aboutme-section {
+  display: wrap;
+  justify-content: center;
+  align-items: baseline;
+  margin: .5em;
+  padding: .5em;
+  width:300px;
+  height:300px;
 }
 
 #name {
@@ -205,11 +229,11 @@ nav a:hover {
 
 #profile-picture:hover {
   opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 
-
 p {
-  display:;
+  display:right;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
