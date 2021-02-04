@@ -71,7 +71,7 @@ padding: 10px;
 
 .column {
   position: relative;
-  display: inline-block; /* Make the width of box same as image */
+  display: inline-block; /* Makes the width of box same as image */
 }
 
 .column-one:hover {
@@ -117,10 +117,10 @@ padding: 10px;
 }
 
 
+/* new code */
 
 
-
-
+/* new code */
 
 div { 
   display: block;
@@ -150,10 +150,7 @@ h2 {
   font-size: 250%;
 }
 
-#work .header {
 
-  display: left;
-}
 
 nav {
   display: flex;
