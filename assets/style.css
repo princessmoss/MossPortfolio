@@ -52,6 +52,27 @@ div {
   display: block;
 }
 
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 
 header {
   display: flex;
@@ -129,7 +150,7 @@ nav a:hover {
 
 
 p {
-  display: block;
+  display:;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -146,17 +167,12 @@ footer {
   color: #fff;
 }
 
-#welcome {
-  font-size: 50px;
-
-}
-
 #subtitle {
   display: flex;
   justify-content: flex-end;
-  background-image: url("./images/greenbackground.png");
+  background-image: url("./images/greenery.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 200%;
   color: rgb(250, 250, 69);
   padding: 150px;
   padding-top:30px;
@@ -164,6 +180,7 @@ footer {
 
 #welcome {
 font-size: 50px;
+background-color: #ccd5ae;
 }
 
 #about-me {
@@ -245,14 +262,47 @@ a[href$='.css']::after {
   margin-left: 3px;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  main {
-    max-width: 1200px;
+@media screen and (max-width: 785px){
+  .content{
+      display:flex;
+      flex-direction: column;
+      width: 50%;
   }
 }
+
+@media screen and (max-width: 375px){
+  .content{
+      display:column;
+      flex-direction: column;
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  header{
+      display: flex;
+      flex-direction: column;
+      
+      
+  }
+}
+
+@media screen and (max-width: 785px){
+  .header{
+      display:flex;
+      flex-direction: column;
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .header{
+      display:column;
+      flex-direction: column;
+      width: 50%;
+  }
+}
+
+
 
 
