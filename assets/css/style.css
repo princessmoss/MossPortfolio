@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: auto;
   }
   
   html {
@@ -40,6 +41,8 @@
     list-style: none;
   }
 
+
+
   body {
     display: flex;
     flex-direction: column;
@@ -51,9 +54,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
+    background-color: #22db41;
     color: #fff;
   }
+
   
   h1 {
     font-size: 200%;
@@ -64,16 +68,26 @@
     font-size: 250%;
   }
   
+  
+  #name { 
+    height: 60px;
+    font-size: 200%;
+    background-color: tomato;
+  
+  }
+
   nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    text-decoration: underline
   }
-  
+
   nav a {
     color: #b9c6ae;
     font-weight: bold;
     text-decoration: none;
+    
   }
   
   nav a:hover {
@@ -109,6 +123,19 @@
     background-color: #13293d;
     color: #fff;
   }
+
+
+#subtitle {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(./assets/images/greenbackground.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: yellow;
+  padding: 150px;
+  padding-top: 30px
+
+}
   
   /* Use an attribute selector to select all <a> elements that have an href value that ends with '.css' */
   a[href$='.css']::after {
